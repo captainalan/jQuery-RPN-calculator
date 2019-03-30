@@ -3,8 +3,11 @@ $(document).ready(function() {
   var current_input = [];
   var calculator = new MathSolver
 
-  $('#display').text("Example: 1 1 +");
-  $('#result').text("Enter an expression and then press 'equal' to calculate result");
+  var RESULT_MSG = "Enter an expression and then press 'equal' to calculate result";
+  var INPUT_MSG  = "Example: 1 1 +";
+
+  $('#display').text(INPUT_MSG);
+  $('#result').text(RESULT_MSG);
 
   function refreshDisplay() {
     current_input !== "" 
@@ -26,6 +29,8 @@ $(document).ready(function() {
   function clear(){
     current_input = [];
     refreshDisplay();
+    $('#display').text(INPUT_MSG);
+    $('#result').text(RESULT_MSG);
   }
 
   /* Number buttons */
