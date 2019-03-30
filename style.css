@@ -1,0 +1,16 @@
+/* Select all spans that are immediate children of buttons */
+button > span {
+    font-size: 2.5rem;
+}
+
+/* Make numbers and operators same width */
+.number {
+    width: 60px;
+}
+.operator {
+    width: 60px;
+}
+
+.equal {
+    width: 60px;
+}
