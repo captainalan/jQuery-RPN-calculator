@@ -3,7 +3,7 @@ $(document).ready(function() {
   var current_input = [];
   var calculator = new MathSolver
 
-  var RESULT_MSG = "Enter an expression and then press 'equal' to calculate result";
+  var RESULT_MSG = "Enter an expression and then press the '=' button (or hit ENTER on your keyboard) to calculate result";
   var INPUT_MSG  = "Example: 1 1 +";
 
   $('#display').text(INPUT_MSG);
