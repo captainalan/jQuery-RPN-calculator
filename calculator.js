@@ -20,6 +20,11 @@ $(document).ready(function() {
     refreshDisplay();
   }
 
+  function popSymbol() {
+    current_input.pop();
+    refreshDisplay();
+  }
+
   function evalResult() {
     if (current_input.length > 0)
       $('#result').text(calculator.solvePostfix(current_input.join('')));
@@ -66,6 +71,8 @@ $(document).ready(function() {
 
     if (event.key === 'Enter') {
       evalResult();
+    } else if (event.key === "Backspace" || event.key === "Delete") {
+      popSymbol();
     } else if (isValid) {
       pushSymbol(event.key);
     } else if (event.key === 'c') {

@@ -1,16 +1,25 @@
+/* A pseudo-class used to set variables */
+:root {
+    --key-width: 50px;
+    --key-height: 60px;
+}
+
 /* Select all spans that are immediate children of buttons */
 button > span {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
 }
 
 /* Make numbers and operators same width */
 .number {
-    width: 60px;
+    width: var(--key-width);
+    height: var(--key-height);
 }
 .operator {
-    width: 60px;
+    width: var(--key-width);
+    height: var(--key-height);
 }
 
 .equal {
-    width: 60px;
+    width: var(--key-width);
+    height: var(--key-height);
 }
