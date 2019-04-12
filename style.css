@@ -23,3 +23,8 @@ button > span {
     width: var(--key-width);
     height: var(--key-height);
 }
+
+/* Greyed out text */
+.greyed_out {
+    color: lightgray;
+}
